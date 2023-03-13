@@ -101,7 +101,21 @@
         <div class="container">
           <h1 class="with-underline text-center">Latest posts</h1>
 
+          <!-- Search -->
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="searchSpan">Search</span>
+            <input
+              id="searchId"
+              type="text"
+              class="form-control"
+              placeholder="search for title post"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+
           <!-- Posts list -->
+<<<<<<< Updated upstream
           <ul id="postsList" class="row posts-list justify-content-center">
             <li class="col-12 col-md-6 col-lg-4">
               <div class="post-item mb-4">
@@ -151,10 +165,18 @@
               id="postsPagination"
               class="pagination justify-content-center"
             >
+=======
+          <ul id="postsList" class="row posts-list justify-content-center ps-0 mt-4"></ul>
+
+          <!-- Posts pagination -->
+          <nav class="posts-nav" aria-label="Posts navigation">
+            <ul id="postsPagination" class="pagination justify-content-center">
+>>>>>>> Stashed changes
               <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
+                  <span aria-hidden="true">&laquo; Prev</span>
                 </a>
+<<<<<<< Updated upstream
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -179,3 +201,35 @@
 </body>
 
 </html>
+=======
+              </li>
+              <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">Next &raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center text-muted py-3">
+      <small>Created by Po with <i class="fas fa-heart"></i></small>
+    </footer>
+
+    <!-- Boostrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scripts should be placed here to prevent blocking render UI -->
+    <script type="module" src="/js/home.js"></script>
+  </body>
+</html>
+>>>>>>> Stashed changes
