@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="post-item-menu">
+          <div data-id="menu" class="post-item-menu">
             <div data-id="edit" class="menu-item rounded-circle" role="button">
               <i class="fas fa-pen"></i>
             </div>
@@ -209,6 +209,29 @@
     <footer class="text-center text-muted py-3">
       <small>Created by Po with <i class="fas fa-heart"></i></small>
     </footer>
+
+    <div id="removeModal" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">REMOVE</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure to remove this post.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            <button id="btnRemove" type="button" class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Boostrap script -->
     <script
